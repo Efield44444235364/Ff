@@ -31,7 +31,7 @@ elseif allowedPlaceIds[game.PlaceId] then
     
     if License == "Ator License" then
         sendNotification("Script ID [" .. GameP .. "]", "Loading Script.")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/zerunquist/TekkitAotr/main/main"))()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/705e7fe7aa288f0fe86900cedb1119b1.lua"))()
 
     elseif License == "maru" then 
         print("Running for maru License")
