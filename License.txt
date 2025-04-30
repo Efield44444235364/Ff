@@ -33,9 +33,8 @@ elseif allowedPlaceIds[game.PlaceId] then
         sendNotification("Script ID [" .. GameP .. "]", "Loading Script.")
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/705e7fe7aa288f0fe86900cedb1119b1.lua"))()
 
-    elseif License == "maru" then 
-        print("Running for maru License")
-        
+    elseif License == "Fisch" then 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Ff/refs/heads/main/Fisch%20.lua"))()
     else
         print("License ผิด!")
         sendNotification("idiot", "License wrong bitch whyyyyy???")
