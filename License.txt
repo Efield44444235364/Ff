@@ -17,7 +17,8 @@ local allowedPlaceIds = {
     [15220308770] = true,
     [14638336319] = true,
     [13904207646] = true,
-    [17688739434] = true
+    [17688739434] = true,
+    [16732694052] = true
 }
 
 local specialPlaceId = 14916516914
