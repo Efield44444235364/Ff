@@ -1,5 +1,5 @@
 local fps = "120"
-local SetFps = loadstring(game:HttpGet("https://pastebin.com/raw/U1Y31cUr"))()
+local SetFps = loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Ff/refs/heads/main/Fpaload2(none).lua"))()
 
 local executor = identifyexecutor and identifyexecutor() or "Unknown Executor"
 
