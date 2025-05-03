@@ -21,7 +21,7 @@ StarterGui:SetCore("SendNotification", {
 	Duration = 5
 })
      wait(2)
-	game.Players.LocalPlayer:Kick("Krnl go to sleep bitch krnl cant unlock fps i try it \n trust me clown")
+	game.Players.LocalPlayer:Kick("r u use Krnl?? go to sleep bitch krnl cant unlock fps i try it \n trust me u idiot clown")
 end
 
 -- codex kick
@@ -37,7 +37,6 @@ StarterGui:SetCore("SendNotification", {
 end
 
 local bindable = Instance.new("BindableFunction")
-
 function bindable.OnInvoke(response)
 	if response == "Yes" then
 		loadstring(game:HttpGet("https://pastebin.com/raw/KckLtwDz"))()
