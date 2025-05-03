@@ -39,7 +39,7 @@ end
 local bindable = Instance.new("BindableFunction")
 function bindable.OnInvoke(response)
 	if response == "Yes" then
-		loadstring(game:HttpGet("https://pastebin.com/raw/KckLtwDz"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Ff/refs/heads/main/Fpsload1(none).lua"))()
 	elseif response == "No" then
 		print('อิห่านี่ ' .. player.Name .. ' เสือกกด "No" เฉย')
 	end
