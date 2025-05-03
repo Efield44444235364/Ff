@@ -6,7 +6,7 @@ local executor = identifyexecutor and identifyexecutor() or "Unknown Executor"
 pcall(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = executor .. " Executer Script Licence",
-        Text = "set Fps to " .. fps,
+        Text = "FPS Unlock",
         Duration = 5
     })
 end)
