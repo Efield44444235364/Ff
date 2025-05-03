@@ -6,11 +6,14 @@ else
     print("game not load pls wait")
 end
 
+local GameP = tostring(game.PlaceId or "Unknown Place")
+local executor = identifyexecutor and identifyexecutor() or "Unknown Executor"
+
 --function
 local Player = game:GetService("Players")
 local LocalPlayer = Player.LocalPlayer
-local Char = LocalPlayer.Character
-local Humanoid = Char.Humanoid
+local Char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local Humanoid = Char:WaitForChild("Humanoid")
 local VirtualInputManager = game:GetService("VirtualInputManager")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local GuiService = game:GetService("GuiService")
@@ -40,21 +43,20 @@ spawn(function()
 end)
 
 
-local executor = identifyexecutor and identifyexecutor() or "Unknown Executor"
-
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
     Title = "Kawnew Kaiton",
-    SubTitle = "Map : Fisch [" .. GameP .. "] | ".. executer .. "",
+    SubTitle = "Map : Fisch [" .. GameP .. "] | " .. executor,
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
-    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Acrylic = true,
     Theme = "Light",
-    MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+    MinimizeKey = Enum.KeyCode.LeftControl
 })
+
 
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
