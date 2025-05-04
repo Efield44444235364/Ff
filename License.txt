@@ -1,3 +1,36 @@
+--game load
+if game:IsLoaded() then
+    print("game has been load")
+else
+    game.Loaded:Wait()
+print("game doesn't load pls wait")
+end
+
+--fps unlock 
+local fps = "120"
+local SetFps = loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Ff/refs/heads/main/Fpaload2(none).lua"))()
+
+local executor = identifyexecutor and identifyexecutor() or "Unknown Executor"
+
+pcall(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = executor .. " Executer Script Licence",
+        Text = "FPS boost",
+        Duration = 5
+    })
+end)
+
+spawn(function()
+    while true do
+        pcall(function()
+            SetFps(fps)  
+        end)
+        wait(1)
+    end
+end)
+
+--fps booste
+
 --function
 local GameP = game.PlaceId
 
