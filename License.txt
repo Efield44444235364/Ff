@@ -63,7 +63,7 @@ if game.PlaceId == specialPlaceId then
 elseif allowedPlaceIds[game.PlaceId] then
     print("script has been executed")
     
-    if License == "Ator License" then
+    if License == "Aotr" then
         sendNotification("Script ID [" .. GameP .. "]", "Loading Script.")
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/705e7fe7aa288f0fe86900cedb1119b1.lua"))()
 
