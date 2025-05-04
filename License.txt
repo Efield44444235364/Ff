@@ -1,12 +1,12 @@
---game load
+-- เริ่มต้นด้วยเช็กว่าเกมโหลดเสร็จหรือยัง
 if game:IsLoaded() then
     print("game has been load")
 else
     game.Loaded:Wait()
     print("game doesn't load pls wait")
-end 
+end
 
---fps unlock 
+-- FPS Unlocker
 local fps = "120"
 local SetFps = loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Ff/refs/heads/main/Fpaload2(none).lua"))()
 
@@ -29,9 +29,7 @@ spawn(function()
     end
 end)
 
---function
-local GameP = game.PlaceId
-
+-- แจ้งเตือน
 local function sendNotification(title, text)
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = title,
@@ -40,7 +38,8 @@ local function sendNotification(title, text)
     })
 end
 
---main 
+-- เช็กว่าอยู่ในแมพที่อนุญาตไหม
+local GameP = game.PlaceId
 local allowedPlaceIds = {
     [13379349730] = true,
     [14012874501] = true,
@@ -51,7 +50,6 @@ local allowedPlaceIds = {
     [17688739434] = true,
     [16732694052] = true
 }
-
 local specialPlaceId = 14916516914
 
 if game.PlaceId == specialPlaceId then
