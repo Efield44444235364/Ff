@@ -3,8 +3,8 @@ if game:IsLoaded() then
     print("game has been load")
 else
     game.Loaded:Wait()
-print("game doesn't load pls wait")
-end
+    print("game doesn't load pls wait")
+end 
 
 --fps unlock 
 local fps = "120"
@@ -28,8 +28,6 @@ spawn(function()
         wait(1)
     end
 end)
-
---fps booste
 
 --function
 local GameP = game.PlaceId
@@ -68,7 +66,7 @@ elseif allowedPlaceIds[game.PlaceId] then
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/705e7fe7aa288f0fe86900cedb1119b1.lua"))()
 
     elseif License == "Fisch" then 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Ff/refs/heads/main/Fisch%20.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Ff/refs/heads/main/Fisch%20.lua"))()
     else
         print("License ผิด!")
         sendNotification("idiot", "License wrong bitch whyyyyy???")
