@@ -27,9 +27,9 @@ _G.Settings = {
         Destroy = false, -- Destroy Images
     },
     ["No Particles"] = false, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
-    ["No Camera Effects"] = false, -- Disables all PostEffect's (Camera/Lighting Effects)
+    ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
     ["No Explosions"] = true, -- Makes Explosion's invisible
-    ["No Clothes"] = false, -- Removes Clothing from the game
+    ["No Clothes"] = true, -- Removes Clothing from the game
     ["Low Water Graphics"] = true, -- Removes Water Quality
     ["No Shadows"] = true, -- Remove Shadows
     ["Low Rendering"] = true, -- Lower Rendering
@@ -44,7 +44,7 @@ pcall(function()
     game.StarterGui:SetCore("SendNotification", {
         Title = executor .. " Executer Script",
         Text = "FPS boost enabled",
-        Duration = 5
+        Duration = 4
     })
 end)
 
@@ -96,5 +96,4 @@ elseif allowedPlaceIds[GameP] then
 
 else
     print("Not allowed PlaceId [" .. GameP .. "]")
-    sendNotification("Error", "This script is not allowed on this map.")
 end
