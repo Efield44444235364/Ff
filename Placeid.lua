@@ -64,11 +64,11 @@ elseif allowedPlaceIds[GameP] then
     print("script has been executed")
     sendNotification("Script ID [" .. GameP .. "]", "Loading Script.")
     
-    --fps boost
-    loadstring(game:HttpGet("https://pastebin.com/raw/pk4gFFBz"))()
     --main script 
     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/705e7fe7aa288f0fe86900cedb1119b1.lua"))()
-
+    --fps boost
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Ff/refs/heads/main/Fpsboost.lua"))()
+    
 else
     print("Not allowed PlaceId [" .. GameP .. "]")
 end
