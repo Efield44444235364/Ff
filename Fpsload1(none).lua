@@ -16,6 +16,6 @@ spawn(function()
         pcall(function()
             SetFps(fps)  
         end)
-        wait(1)
+        wait(0.0000001)
     end
 end)
