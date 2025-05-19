@@ -249,8 +249,7 @@ if not player.Team then
     until player.Team
 end   
    
-hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Death), function()end)
-hookfunction(require(game:GetService("ReplicatedStorage").Effect.Container.Respawn), function()end)
+
 if game.PlaceId == 2753915549 then
         World1 = true
     elseif game.PlaceId == 4442272183 then
