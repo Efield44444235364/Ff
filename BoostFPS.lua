@@ -47,3 +47,6 @@ for _, v in ipairs(workspace:GetDescendants()) do
         v.BlastRadius = v.BlastRadius * 0.5
     end
 end
+
+
+warn("boost fps load!")
