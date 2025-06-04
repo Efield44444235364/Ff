@@ -1,4 +1,5 @@
 -- // MoreUNC V2.0.0, Have fun skidding devs!
+warn("running more UNC!!!")
 
 local Operations = { -- Fixes executors that only use lua, not luau
 	Addition = {'(%w+)(%s*)%+=(%s*)(%w+)', '%1%2=%3%1%2+%3%4'}, -- v1+=v2 -> v1=v1+v2
