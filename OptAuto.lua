@@ -25,7 +25,7 @@ local TeleportCheck = false
 local function detectExecutor()
 	local exec = identifyexecutor and identifyexecutor():lower() or "unknown"
 
-	if exec:find("Krnl") then
+	if exec:find("krnl") then
 		return "krnl"
 	elseif exec:find("ArceusX") then
 		return "Arceus X"
