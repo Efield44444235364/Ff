@@ -15,7 +15,7 @@ local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
 
-------------------------------- On/off --------------------------------
+------------------------------ On/off --------------------------------
 local KeepESP = true -- เปิด/ปิด Auto Exec
 ------------------------------------------------------------------------
 
@@ -25,17 +25,17 @@ local TeleportCheck = false
 local function detectExecutor()
 	local exec = identifyexecutor and identifyexecutor():lower() or "unknown"
 
-	if exec:find("krnl") then
+	if exec:find("Krnl") then
 		return "krnl"
-	elseif exec:find("arceus") then
+	elseif exec:find("ArceusX") then
 		return "Arceus X"
-	elseif exec:find("delta") then
+	elseif exec:find("Delta") then
 		return "Delta"
-	elseif exec:find("codex") then
+	elseif exec:find("Codex") then
 		return "Codex"
-	elseif exec:find("trigon") then
+	elseif exec:find("Trigon") then
 		return "Trigon"
-	elseif exec:find("cryptic") then
+	elseif exec:find("Cryptic") then
 		return "Cryptic"
 	else
 		return "Your Executor :) "
