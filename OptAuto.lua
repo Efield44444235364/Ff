@@ -1,22 +1,11 @@
---[[
- ⚠️ WARNING: DO NOT place this script directly into the KRNL AutoExec folder. ⚠️
- This script may cause bugs or unpredictable behavior when executed automatically on game load via KRNL ❗❗
- 
- ✨ It is designed to be used manually or executed at runtime, and it includes:
- - Auto execution on teleporting/rejoining a new server
- - Loading of performance optimization scripts with success/error checks
-
- 🛠️ Author: Kawnew
- 🌐 Script URLs: GitHub Hosted (see loadstring calls)
- 💡 Recommended usage: Attach in-game with a manual executor
---]]
 
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
 
------------------------------- On/off --------------------------------
-local KeepESP = true -- เปิด/ปิด Auto Exec
+------------------------------------------------------------------------
+-- ✅ เปิด/ปิดระบบ Auto Execute จากภายนอก loadstring ด้วยตัวแปร:
+-- ใส่ AutoExecute = true หรือ false ก่อน loadstring() ด้านนอก
 ------------------------------------------------------------------------
 
 local TeleportCheck = false
@@ -79,7 +68,7 @@ end
 
 -- Auto Exec ตอน rejoin
 LocalPlayer.OnTeleport:Connect(function(State)
-	if KeepESP and not TeleportCheck and queue_on_teleport then
+	if AutoExecute and not TeleportCheck and queue_on_teleport then
 		TeleportCheck = true
 		queue_on_teleport(
 			"print(' [ ✅ ] Auto Exec when Rejoin Load!!')\n" ..
