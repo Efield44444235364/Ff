@@ -232,3 +232,5 @@ warn("[ ⚙️ ] Script loaded - Do NOT put in AutoExec folder directly!")
 
 -- โหลด Anti-Cheat Delete
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Efield44444235364/Anti-ban/refs/heads/main/Anti%20cheat%20delete.lua"))()
+print(" [ ✅ ] Server Load!!")
+
